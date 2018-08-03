@@ -1,0 +1,10 @@
+# Density-Models-Into-Mass-Equation
+from sympy import *
+init_printing(use_latex='mathjax')
+from sympy import symbols, pi
+
+rho_s=Symbol('rho_s')
+r=Symbol('r')
+r_s=Symbol('r_s')
+
+integrate(((4*pi*(r**2))*(rho_s/((r/r_s)*((1+(r/r_s))**2)))),r)
